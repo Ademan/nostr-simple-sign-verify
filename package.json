@@ -1,0 +1,17 @@
+{
+  "name": "nostr-sign-verify",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Daniel Roberts <ademan555@gmail.com>",
+  "license": "MIT",
+  "entry": "src/main.js",
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "nostr-tools": "^2.7.0"
+  }
+}
