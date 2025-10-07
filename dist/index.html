@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Nostr Sign (NIP-07) and Verify</title>
+		<base href=".">
+		<style type="text/css">
+		.hidden {
+			display: none;
+		}
+
+		.error {
+			border: 1px solid Red;
+			background: LightCoral;
+		}
+
+		.warning {
+			border: 1px solid OrangeRed;
+			background: Orange;
+		}
+
+		.success {
+			border: 1px solid Green;
+			background: LightGreen;
+		}
+
+		form {
+			display: block;
+			min-width: 66%;
+			width: 80ch;
+			max-width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		form input, form textarea {
+			width: 100%;
+		}
+
+		form ul:has(button) {
+			list-style: none;
+			display: flex;
+		}
+		</style>
+	</head>
+<style>
+</style>
+	</head>
+	<body>
+		<form>
+			<h1>Sign or Verify Nostr Event</h1>
+			<input id="npub" name="npub" placeholder="npub"></input>
+			<textarea id="event" name="event" placeholder="Event Json" rows="20"></textarea>
+			<p id="message" class="hidden"></p>
+			<ul>
+				<li><button id="sign-button" type="button">Sign</button></li>
+				<li><button id="verify-button" type="button">Verify</button></li>
+			</ul>
+		</form>
+
+		<script src="./bundle.js"></script>
+	</body>
+</html>
